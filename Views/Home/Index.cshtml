@@ -5,8 +5,13 @@
 <h1>Magic Mushroom</h1>
 
 
+<script>
+    document.getElementById("button1").addEventListener("click", redirect);
+    function redirect() { window.location = "https://localhost:7135/Character/Creator/"; }
+
+</script>
 <style>
-    .button {
+    #button1 {
         color: black;
         text-align: center;
         font-family: Arial;
@@ -18,6 +23,7 @@
         left:700px;
     }
 </style>
+
 <body>
-    <button class="button">Start</button>
+    <button id="button1" onclick="redirect()">Start</button>
 </body>

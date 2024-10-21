@@ -1,4 +1,10 @@
+using MagicMushroom.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<CharacterContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnectionString")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

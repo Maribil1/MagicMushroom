@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MagicMushroom.Models
 {
-    public class Characters 
+    public class Character 
     {
         [Key]
         [Required]
