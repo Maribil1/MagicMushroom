@@ -17,14 +17,17 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>           
-          
-            <div class="form-group">
-                <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
-                <span asp-validation-for="Gender" class="text-danger"></span>
+             <div class="form-group">
+                <label asp-for="Gender" >Choose your gender:</label>
+                <select id="dropdown"  class="dropdown-content">
+                    <option value="option1">Female</option>
+                    <option value="option2">Male</option>
+                    <option value="option3">Gmaile</option>
+                 </select>
             </div>
+           
             <div class="form-group">
-                <label asp-for="Mushroom" >Choose your magic mushroom</label>
+                <label asp-for="Mushroom" >Choose your magic mushroom:</label>
                 <select id="dropdownMenu"  class="dropdown-content">
                     <option value="option1">Psilocybe azurescens</option>
                     <option value="option2">Psilocybe cubensis</option>
@@ -37,10 +40,10 @@
 
             <div>
                 <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
                   
             </div>
             
         </form>
-    
+    </div>
 </div> 

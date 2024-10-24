@@ -14,13 +14,13 @@ namespace MagicMushroom.Controllers
         {
             _context = context;
         }
-        public IActionResult Creator()
+        public IActionResult Create()
         {
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Creator([Bind("Name, Gender, Mushroom")] Character character)
+        public async Task<IActionResult> Create([Bind("Name, Gender, Mushroom")] Character character)
         {
             if (ModelState.IsValid)
             {
@@ -28,7 +28,7 @@ namespace MagicMushroom.Controllers
                 await _context.SaveChangesAsync();
                 return View();
             }
-            return View(character);
+            return View("Index");
         }
     }
 }

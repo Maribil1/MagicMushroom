@@ -5,7 +5,7 @@ namespace MagicMushroom.Models
 {
     public class Character 
     {
-        [Key]
+        
         [Required]
         public string Name { get; set; }
         [Required]
