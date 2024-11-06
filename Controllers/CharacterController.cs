@@ -19,7 +19,7 @@ namespace MagicMushroom.Controllers
             return View();
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
+        
         public async Task<IActionResult> Create([Bind("Name, Gender, Mushroom")] Character character)
         {
             if (ModelState.IsValid)
