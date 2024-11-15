@@ -17,31 +17,46 @@
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>           
-             <div class="form-group">
-                <label asp-for="Gender" >Choose your gender:</label>
-                <select id="dropdown"  class="dropdown-content">
-                    <option value="option1">Female</option>
-                    <option value="option2">Male</option>
-                    <option value="option3">Gmaile</option>
-                 </select>
-            </div>
+            <br />
+            
            
+            
             <div class="form-group">
-                <label asp-for="Mushroom" >Choose your magic mushroom:</label>
-                <select id="dropdownMenu"  class="dropdown-content">
-                    <option value="option1">Psilocybe azurescens</option>
-                    <option value="option2">Psilocybe cubensis</option>
-                    <option value="option3">Gymnopilus validipes</option>
-                    <option value="option4">Panaeolus africanus</option>
-                    <option value="option4">Inocybe corydalina</option>
-                    <option value="option4">Amanita muscaria</option>
-                </select>
+                <label asp-for="Gender">Choose your gender:</label>
+                <br /><br /><br />
+                <label>Female</label>
+                   <input type="radio" id="option1"
+                    name="gender" value="female" />
+                    
+                        <img src="~/css/female.png" 
+                        width="150" height="150"
+                        style="vertical-align:bottom"/>
+                        <br /><br />
+                
+                <label>Male</label>
+                <input type="radio" id="option2"
+                       name="gender" value="male" />
+
+                <img src="~/css/man.png"
+                     width="150" height="ˇ150"
+                     style="vertical-align:bottom" />
+                <br /><br />
+                <label>Gmail</label>
+                <input type="radio" id="option3"
+                       name="gender" value="gmail" />
+
+                <img src="~/css/gmail.png"
+                     width="150" height="150"
+                     style="vertical-align:bottom" />
+                     <br />
+                    
             </div>
 
             <div>
-                <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-                  
+                  <div class="form-group">
+                      <input type="submit" value="Venture forth" class="btn"
+                          style="align-items:safe center"
+                      />
             </div>
             
         </form>

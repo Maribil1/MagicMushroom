@@ -20,7 +20,7 @@ namespace MagicMushroom.Controllers
         }
         [HttpPost]
         
-        public async Task<IActionResult> Create([Bind("Name, Gender, Mushroom")] Character character)
+        public async Task<IActionResult> Create([Bind("Name, Gender")] Character character)
         {
             if (ModelState.IsValid)
             {
